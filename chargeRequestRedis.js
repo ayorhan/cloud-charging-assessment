@@ -4,7 +4,6 @@ const redis = require("redis");
 const util = require("util");
 const KEY = `account1/balance`;
 const DEFAULT_BALANCE = 100;
-const MAX_EXPIRATION = 60 * 60 * 24 * 30;
 
 exports.chargeRequestRedis = async function (input) {
     const redisClient = await getRedisClient();
